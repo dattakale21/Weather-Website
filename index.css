@@ -194,9 +194,10 @@ body {
     }
 
     .search img {
-        height: 2rem;
-        width: 2rem;
+        height: 1.6rem;
+        width: 1.6rem;
         margin-bottom: -0.3rem;
+        margin-right: -2rem;
     }
 
     .search input {
