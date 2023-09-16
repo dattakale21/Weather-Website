@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+body {
+    background-color: #223;
+}
+
+.card {
+    width: 100;
+    max-width: 25rem;
+    background: linear-gradient(-179deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 4rem auto 0;
+    border-radius: 1.2rem;
+    padding: 2rem 2rem;
+    text-align: center;
+    max-height: 80vh;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.search input {
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    color: #555;
+    height: 6vh;
+    flex: 1;
+    padding: 0.2rem 1rem;
+    margin-right: 0.9rem;
+    font-size: 1.1rem;
+}
+
+.search button {
+    border-radius: 40%;
+    border: none;
+    outline: none;
+    background: #ebfffc;
+    height: 2.4rem;
+    width: 2.4rem;
+    cursor: pointer;
+}
+
+.search img {
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-bottom: -0.3rem;
+    margin-left: -0.1rem;
+}
+
+.weather .weather-icon {
+    width: 50%;
+    margin-top: 0.5rem;
+}
+
+.weather h1 {
+    font-size: 2.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2rem;
+}
+
+.weather h2 {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2rem;
+    margin-top: 0.2rem;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.details .col {
+    margin: 2rem -0.1rem;
+    margin-bottom: -0.6rem;
+    display: flex;
+
+}
+
+.col img {
+    width: 2rem;
+    height: 1.8rem;
+}
+
+.col .hum,
+.wind {
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -0.5rem;
+    margin-left: 0.5rem;
+}
+
+.col .mea {
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0.6rem;
+}
+
+@media ((max-height:950px) and (max-width:413px)) {
+    body {
+        max-height: 40vh;
+    }
+
+    .card {
+        margin: 5rem 0.4rem;
+        height: 80vh;
+
+    }
+
+    .weather .weather-icon {
+        margin-top: 2rem;
+        width: 60%;
+
+    }
+
+
+    .weather h1 {
+        font-size: 3.4rem;
+
+    }
+
+    .weather h2 {
+        font-size: 2.3rem;
+        margin-top: 0.2rem;
+    }
+
+    .col img {
+        width: 2.4rem;
+        height: 2.3rem;
+        margin-left: 2rem;
+    }
+
+    .col {
+        flex-direction: column;
+
+    }
+
+    .col .hum,
+    .wind {
+        font-size: 1.7rem;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+
+    }
+
+    .col .hum {
+        margin-left: 1.4rem;
+    }
+
+    .col #hu {
+        margin-right: -1rem;
+    }
+
+
+    .col #win {
+        margin-left: 0.5rem;
+
+
+    }
+
+    .col #wi {
+        margin-left: 2.6rem;
+    }
+
+    .col .mea {
+        font-size: 1.11rem;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 0.9rem;
+    }
+
+    .details {
+        margin-top: 5rem;
+        padding-bottom: -9rem;
+    }
+
+    .search button {
+        height: 3.4rem;
+        width: 3.4rem;
+    }
+
+    .search img {
+        height: 1.7rem;
+        width: 1.7rem;
+        margin-bottom: -0.3rem;
+        margin-left: -0.1rem;
+    }
+
+    .search input {
+        padding: 0.2rem 1.4rem;
+        margin-right: -4.1rem;
+        width: 80vw;
+        margin-left: -1rem;
+    }
+
+}
+
+@media ((max-height:950px) and (max-width:307px)) {
+
+    html{
+        font-size: 80%;
+    }
+
+}
