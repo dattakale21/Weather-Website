@@ -115,8 +115,8 @@ body {
     }
 
     .card {
-        margin: 5rem 0.4rem;
-        height: 80vh;
+        margin: 2rem 0.4rem;
+        height: 90vh;
 
     }
 
@@ -188,20 +188,20 @@ body {
     }
 
     .search button {
-        height: 3.4rem;
-        width: 3.4rem;
+        height: 6vh;
+        width: 6vh;
+        padding-right: -1.2rem;
     }
 
     .search img {
-        height: 1.7rem;
-        width: 1.7rem;
+        height: 2rem;
+        width: 2rem;
         margin-bottom: -0.3rem;
-        margin-left: -0.1rem;
     }
 
     .search input {
         padding: 0.2rem 1.4rem;
-        margin-right: -4.1rem;
+        margin-right: -4.4rem;
         width: 80vw;
         margin-left: -1rem;
     }
