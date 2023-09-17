@@ -10,7 +10,7 @@ body {
 }
 
 .card {
-    width: 100;
+    width: 100%;
     max-width: 25rem;
     background: linear-gradient(-179deg, #00feba, #5b548a);
     color: #fff;
@@ -64,13 +64,13 @@ body {
 }
 
 .weather h1 {
-    font-size: 2.8rem;
+    font-size: 3.2rem;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 0.2rem;
 }
 
 .weather h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 0.2rem;
     margin-top: 0.2rem;
@@ -100,7 +100,7 @@ body {
     font-size: 1.3rem;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: -0.5rem;
-    margin-left: 0.5rem;
+    margin-left: 0.7rem;
 }
 
 .col .mea {
@@ -109,14 +109,62 @@ body {
     margin-left: 0.6rem;
 }
 
+.col #win {
+    margin-left: 1.2rem;
+}
+
+.error h4 {
+    font-size: 1.4rem;
+    color: rgb(205, 85, 85);
+    margin-top: 0.7rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: none;
+}
+
+.emp h4 {
+    font-size: 1.4rem;
+    color: rgb(219, 86, 86);
+    margin-top: 0.7rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: none;
+}
+
+.err {
+    animation: shake 0.1s linear 10;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-2px);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    75% {
+        transform: translateX(2px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 @media ((max-height:950px) and (max-width:413px)) {
     body {
         max-height: 40vh;
     }
 
     .card {
-        margin: 2rem 0.4rem;
-        height: 90vh;
+        /* margin: 2rem 0.4rem; */
+        margin-top: 5rem;
+        height: 96vh;
+        margin-bottom: -2rem;
 
     }
 
@@ -173,7 +221,7 @@ body {
     }
 
     .col #wi {
-        margin-left: 2.6rem;
+        margin-left: 2.9rem;
     }
 
     .col .mea {
@@ -185,6 +233,7 @@ body {
     .details {
         margin-top: 5rem;
         padding-bottom: -9rem;
+        margin-bottom: 3rem;
     }
 
     .search button {
@@ -197,7 +246,7 @@ body {
         height: 1.6rem;
         width: 1.6rem;
         margin-bottom: -0.3rem;
-        margin-right: -2rem;
+        margin-right: -3rem;
     }
 
     .search input {
@@ -211,8 +260,16 @@ body {
 
 @media ((max-height:950px) and (max-width:307px)) {
 
-    html{
+    html {
         font-size: 80%;
     }
 
+}
+
+
+@media (max-width:1112px) and (max-height:950px) {
+    .card {
+        width: 100%;
+        height: 80%;
+    }
 }
