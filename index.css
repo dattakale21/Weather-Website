@@ -19,6 +19,7 @@ body {
     padding: 2rem 2rem;
     text-align: center;
     max-height: 92vh;
+    border: 2px solid rgb(132, 146, 153);
 }
 
 .search {
@@ -339,7 +340,7 @@ body {
     .col #win {
         margin-left: -0.5rem;
         font-size: 2rem;
-        
+
 
     }
 
@@ -466,9 +467,9 @@ body {
 
 @media (max-height:1728px) {
     .card {
-        height: 150vh;
+        height: 130vh;
         margin-bottom: -2rem;
-        margin-left: 1.4rem;
+        margin-left: 1.6rem;
     }
 
     .col .hum,
@@ -486,12 +487,20 @@ body {
         margin-left: 0.9rem;
     }
 
-    .col #win{
+    .col #win {
         margin-left: -1.2rem;
     }
 
+    .col .hum {
+        margin-left: 2.3rem;
+    }
+
     .search {
-        margin-left: 0.4rem;
+        margin-left: 0.5rem;
+    }
+
+    .details {
+        margin-bottom: -3rem;
     }
 
 }
