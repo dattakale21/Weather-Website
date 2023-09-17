@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', 'sans-serif';
+
+    .search {
+        margin: 0 auto;
+    }
 }
 
 body {
@@ -20,7 +24,7 @@ body {
     text-align: center;
     max-height: 92vh;
     border: 2px solid rgb(132, 146, 153);
-    height: 50rem;
+    height: 90rem;
 }
 
 .search {
@@ -82,7 +86,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin-top: -18rem;
 }
 
 .details .col {
@@ -462,6 +466,7 @@ body {
         padding-left: -1rem;
     }
 
+
 }
 
 @media (max-height:1728px) {
@@ -509,8 +514,9 @@ body {
 @media (max-width:1440px) {
 
     .newcard {
-        height: 80vh;
-        margin: 4rem auto;
+        margin-top: -2rem;
+        height: 180vh;
+        margin: 1.3rem auto;
     }
 
     .search img {
@@ -521,7 +527,7 @@ body {
     }
 
     .search {
-        margin-left: -0.6rem;
+        margin-left: -0.2rem;
         border-radius: 0.1rem;
     }
 
@@ -535,8 +541,8 @@ body {
 
     .weather .weather-icon {
 
-        width: 20rem;
-        height: 11rem;
+        width: 22rem;
+        height: 13rem;
 
     }
 
@@ -552,7 +558,7 @@ body {
     }
 
     .col #wi {
-        margin-left: 2.9rem;
+        margin-left: 1.9rem;
     }
 
     .col #win {
@@ -566,44 +572,56 @@ body {
 
 
     .col img {
-        width: 2.4rem;
-        height: 2.3rem;
+        width: 5.4rem;
+        height: 3.3rem;
         margin-left: 2rem;
     }
 
     .weather h1 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     .weather h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .details {
-        margin-top: 5rem;
+        margin-top: 3rem;
+        padding: 0 5rem;
+        margin-bottom: 22rem;
+
+
+    }
+
+    html {
+        font-size: 80%;
     }
 }
 
 @media (max-width:1024px) {
     .newcard {
-        height: 90vh;
-        margin: 4rem auto;
+        height: 160vh;
+        margin: 1rem auto;
     }
 
     .search {
         width: 98%;
         margin: 0 auto;
-        margin-left: -0.2rem;
+        margin-left: 0.3rem;
         margin-top: -1rem;
     }
 
     .weather .weather-icon {
-        width: 18rem;
-        height: 10rem;
+        width: 26rem;
+        height: 14rem;
     }
 
     .details {
-        padding-top: 2rem;
+        margin-top: 2rem;
+    }
+
+    html {
+        font-size: 70%;
     }
 }
 
@@ -613,15 +631,19 @@ body {
         height: 14rem;
     }
 
+    html {
+        font-size: 90%;
+    }
+
     .search img {
-        width: 2rem;
-        height: 2rem;
+        width: 1.4rem;
+        height: 1.4rem;
         margin-bottom: -0.3rem;
-        margin-right: -3rem;
+        margin-right: -5rem;
     }
 
     .search {
-        margin-left: -0.6rem;
+        margin-left: -1.01rem;
         border-radius: 0.1rem;
     }
 
@@ -673,12 +695,36 @@ body {
     }
 
     .details {
-        margin-top: 2rem;
+        margin-top: 5rem;
+        padding: 0 1rem;
     }
 
-    .col #hu{
+    .col #hu {
         margin-left: -0.4rem;
     }
 
+    .newcard {
+        margin-top: 2rem;
+    }
+
+
+}
+
+@media (max-width:429px) {
+    html {
+        font-size: 60%;
+    }
+
+    .details {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width:370px) {
+    .search img {
+        width: 1.3rem;
+        height: 1.3rem;
+        margin-right: -5.7rem;
+    }
 
 }
