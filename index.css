@@ -295,12 +295,12 @@ body {
     }
 
     .weather h1 {
-        font-size: 5.4rem;
+        font-size: 4.4rem;
 
     }
 
     .weather h2 {
-        font-size: 3.3rem;
+        font-size: 2.6rem;
         margin-top: 0.2rem;
     }
 
@@ -337,13 +337,14 @@ body {
 
 
     .col #win {
-        margin-left: 0.9rem;
+        margin-left: -0.5rem;
         font-size: 2rem;
+        
 
     }
 
     .col #wi {
-        margin-left: 4.9rem;
+        margin-left: 0.9rem;
     }
 
     .col .mea {
@@ -414,26 +415,30 @@ body {
     }
 
     .col .wind {
-        margin-left: 1rem;
+        margin-left: -1rem;
     }
 }
 
 @media (max-width:446px) {
     .newcard {
-        margin-left: 1.4rem;
+        margin-left: 1.5rem;
     }
 
     .weather .weather-icon {
-        width: 17rem;
-        height: 15rem;
+        width: 14rem;
+        height: 11rem;
     }
 
     .search {
-        margin-left: 0.4rem;
+        margin-left: 0.8rem;
     }
 
     .search input {
         font-size: 1.7rem;
+    }
+
+    html {
+        font-size: 80%;
     }
 }
 
@@ -477,7 +482,8 @@ body {
     .col #wi {
         margin-left: 1.9rem;
     }
-    .search{
+
+    .search {
         margin-left: -0.01rem;
     }
 
