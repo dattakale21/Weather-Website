@@ -373,7 +373,7 @@ body {
     }
 
     .search {
-        margin-left: 0.5rem;
+        margin-left: 0.4rem;
     }
 
     .search input {
@@ -467,11 +467,14 @@ body {
 @media (max-height:1728px) {
     .card {
         height: 150vh;
+        margin-bottom: -2rem;
+        margin-left: 1.4rem;
     }
 
     .col .hum,
     .wind {
         font-size: 170%;
+
     }
 
     .col #hu,
@@ -480,11 +483,15 @@ body {
     }
 
     .col #wi {
-        margin-left: 1.9rem;
+        margin-left: 0.9rem;
+    }
+
+    .col #win{
+        margin-left: -1.2rem;
     }
 
     .search {
-        margin-left: -0.01rem;
+        margin-left: 0.4rem;
     }
 
 }
