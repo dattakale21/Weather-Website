@@ -1,14 +1,15 @@
-const apikey = "ab526cb268db89e0052129d41519dfdf";
-const apiurl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
-var searchbox = document.querySelector(".search input");
-var btn = document.querySelector(".search button");
-const weathericon = document.querySelector(".weather-icon")
+const apikey = "ab526cb268db89e0052129d41519dfdf";     // open weather map key
+const apiurl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";   //  open weather map url
+
+var searchbox = document.querySelector(".search input");    //search box
+var btn = document.querySelector(".search button");         // search button
+const weathericon = document.querySelector(".weather-icon")    // weather image
 
 async function checkweather(city) {
 
     const response = await fetch(apiurl + city + `&appid=${apikey}`);
 
-    if (response.status == 404) {
+    if (response.status == 404) {     // for invalid city name
         city = "Pune";
         document.querySelector(".error h4").style.display = "block";
         searchbox.classList.add("err");
@@ -19,7 +20,7 @@ async function checkweather(city) {
         }, 1000);
     }
 
-    else if (!city) {
+    else if (!city) {    //  for empty city name
         city = "Pune";
         document.querySelector(".emp h4").style.display = "block";
         searchbox.classList.add("err");
@@ -27,18 +28,14 @@ async function checkweather(city) {
             searchbox.classList.remove("err");
             document.querySelector(".emp h4").style.display = "none";
         }, 1000);
-
     }
 
     else {
         var data = await response.json();
-        console.log(data);
-
         document.querySelector(".city").innerHTML = data.name;
         document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + '°c';
         document.querySelector(".hum").innerHTML = data.main.humidity + "%";
         document.querySelector(".wind").innerHTML = (data.wind.speed + 5).toFixed(2) + " km/h";
-
 
         if (data.weather[0].main == "Clouds") {
             weathericon.src = "images/clouds.png";
@@ -64,15 +61,15 @@ async function checkweather(city) {
             weathericon.src = "images/snow.png";
         }
     }
-
 }
 
-
-btn.addEventListener("click", () => {
+btn.addEventListener("click", () => {    // search button click events
     checkweather(searchbox.value);
 });
 
-
-window.addEventListener("load", () => {
+window.addEventListener("load", () => {        // default city for weather details
     checkweather("Pune");
 });
+
+
+// Code By - Datta Kale 
