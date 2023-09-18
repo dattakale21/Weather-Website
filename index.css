@@ -568,7 +568,7 @@ body {
     }
 
     html {
-        font-size: 120%;
+        font-size: 70%;
     }
 }
 
@@ -613,6 +613,87 @@ body {
     }
 
     .col #wi {
+        margin-left: 3.4rem;
+    }
+
+    .col #win {
+        margin-left: 0.7rem;
+    }
+
+    .col .hum {
+        margin-left: 1rem;
+    }
+
+    .col img {
+        width: 3.4rem;
+        height: 3.3rem;
+        margin-left: 1rem;
+    }
+
+    .weather h1 {
+        font-size: 5rem;
+    }
+
+    .weather h2 {
+        font-size: 3rem;
+    }
+
+    .details {
+        margin-top: 4rem;
+        padding: 0 1rem;
+    }
+
+    .col #hu {
+        margin-left: -0.2rem;
+    }
+
+    .newcard {
+        margin-top: 2rem;
+        height: 150vh;
+    }
+}
+
+@media (max-width:914px) and (max-height:414px) {
+    .weather .weather-icon {
+        width: 21rem;
+        height: 9rem;
+    }
+
+    html {
+        font-size: 80%;
+    }
+
+    .search img {
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-bottom: -0.3rem;
+        margin-right: -3rem;
+    }
+
+    .search {
+        margin-left: -1.01rem;
+        border-radius: 0.1rem;
+    }
+
+    .search input {
+        padding: 0.2rem 1.4rem;
+        margin-right: -5rem;
+        width: 80vw;
+        margin-left: 0rem;
+        font-size: 1.4rem;
+    }
+
+    .col .hum,
+    .wind {
+        font-size: 180%;
+    }
+
+    .col #hu,
+    .col #win {
+        font-size: 130%;
+    }
+
+    .col #wi {
         margin-left: 2.9rem;
     }
 
@@ -639,7 +720,7 @@ body {
     }
 
     .details {
-        margin-top: 4rem;
+        margin-top: -4rem;
         padding: 0 1rem;
     }
 
@@ -649,9 +730,10 @@ body {
 
     .newcard {
         margin-top: 2rem;
-        height: 150vh;
+        height: 190vh;
     }
 }
+
 
 @media (max-width:429px) {
     html {
