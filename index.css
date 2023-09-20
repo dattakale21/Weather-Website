@@ -9,6 +9,16 @@ body {
     background-color: #223;
 }
 
+.title {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.2rem;
+    font-size: 2.4rem;
+}
+
 .card {
     width: 100%;
     max-width: 20rem;
@@ -20,7 +30,7 @@ body {
     text-align: center;
     max-height: 92vh;
     border: 2px solid rgb(132, 146, 153);
-    height: 90rem;
+    height: 80rem;
 }
 
 .search {
@@ -133,6 +143,18 @@ body {
     animation: shake 0.1s linear 10;
 }
 
+
+#foot {
+    position: absolute;
+    bottom: 0;
+}
+
+#foot h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @keyframes shake {
     0% {
         transform: translateX(0);
@@ -162,9 +184,9 @@ body {
         max-height: 40vh;
     }
 
-    .card {
+    .newcard {
         margin-top: 1rem;
-        height: 96vh;
+        height: 56vh;
         margin-bottom: -2rem;
     }
 
@@ -468,16 +490,26 @@ body {
 
 @media (max-width:1440px) {
     .newcard {
-        margin-top: -2rem;
-        height: 180vh;
+        height: 70vh;
         margin: 1.3rem auto;
+        margin-top: 9rem;
+    }
+
+    .title {
+        position: absolute;
+        top: 1rem;
+        left: 2rem;
+        color: #fff;
+        font-family: 'Courier New', Courier, monospace;
+        letter-spacing: 0.2rem;
+        font-size: 180%
     }
 
     .search img {
-        width: 1rem;
-        height: 1rem;
+        width: 2rem;
+        height: 2rem;
         margin-bottom: -0.3rem;
-        margin-right: -3rem;
+        margin-right: -1rem;
     }
 
     .search {
@@ -535,26 +567,56 @@ body {
     }
 
     .details {
-        margin-top: 3rem;
+        margin-top: 1rem;
         padding: 0 5rem;
         margin-bottom: 22rem;
     }
 
     html {
-        font-size: 80%;
+        font-size: 60%;
     }
+
+    #foot {
+        position: absolute;
+        bottom: 0;
+        background-color: black;
+        width: 100vw;
+        height: 3rem;
+    }
+
+    #foot h2 {
+        font-size: 1.2rem;
+        display: flex;
+        letter-spacing: 0.2rem;
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem auto;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
 }
 
 @media (max-width:1024px) {
     .newcard {
-        height: 160vh;
-        margin: 1rem auto;
+        height: 69vh;
+        margin: 8rem auto;
+    }
+
+    .title {
+        position: absolute;
+        top: 1rem;
+        left: 2rem;
+        color: #fff;
+        font-family: 'Courier New', Courier, monospace;
+        letter-spacing: 0.2rem;
+        font-size: 190%
     }
 
     .search {
         width: 98%;
         margin: 0 auto;
-        margin-left: -0.007rem;
+        margin-left: 0.8rem;
         margin-top: -1rem;
     }
 
@@ -564,11 +626,11 @@ body {
     }
 
     .details {
-        margin-top: 2rem;
+        margin-top: -0.6rem;
     }
 
     html {
-        font-size: 70%;
+        font-size: 50%;
     }
 }
 
@@ -579,7 +641,7 @@ body {
     }
 
     html {
-        font-size: 200%;
+        font-size: 50%;
     }
 
     .search img {
@@ -648,10 +710,12 @@ body {
     }
 
     .newcard {
-        margin-top: 2rem;
-        height: 150vh;
+        margin-top: -1rem;
+        height: 80vh;
     }
 }
+
+
 
 @media (max-width:914px) and (max-height:414px) {
     .weather .weather-icon {
@@ -737,18 +801,22 @@ body {
 
 @media (max-width:429px) {
     html {
-        font-size: 90%;
+        font-size: 40%;
     }
 
     .details {
+        margin-top: 8rem;
         padding: 0 1rem;
     }
 
     .search {
-        margin-left: -2rem;
+        margin-left: -1.3rem;
         padding: 0 1rem
     }
 
+    .title {
+        font-size: 170%;
+    }
 
     .search input {
         padding: 0.2rem 1.4rem;
@@ -759,9 +827,14 @@ body {
     }
 
     .search img {
-        margin-left: 2rem;
-        width: 1.4rem;
-        height: 1.4rem;
+        margin-right: -6rem;
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    .newcard {
+        width: 80vw;
+        margin-top: 11rem;
     }
 
     .weather .weather-icon {
@@ -769,22 +842,57 @@ body {
         height: 16rem;
     }
 
+    #foot h2 {
+        font-size: 90%;
+    }
+
 }
 
-@media (max-width:370px) {
+@media (max-width:376px) {
     .search img {
-        width: 1.3rem;
-        height: 1.3rem;
-        margin-right: -5.7rem;
+        width: 1.7rem;
+        height: 1.7rem;
+        margin-right: -8rem;
     }
 
     html {
-        font-size: 80%;
+        font-size: 40%;
     }
 
     .search {
-        margin-right: -0.7rem;
+        margin-left: -1.8rem;
+    }
+
+    .details {
+        margin-top: 5rem;
+    }
+
+    .newcard {
+        height: 69vh;
+        margin-top: 11rem;
     }
 }
+
+@media (max-width:321px) {
+    #foot h2 {
+        font-size: 60%;
+    }
+
+    .search {
+        margin-left: -1.3rem;
+    }
+
+    .search img {
+        margin-left: -1.3rem;
+    }
+}
+
+@media (max-width:270px) {
+    #foot h2 {
+        font-size: 10%;
+        letter-spacing: 0.000001rem;
+          }
+}
+
 
 /* Code By - Datta Kale  */
