@@ -847,6 +847,7 @@ body {
     .weather .weather-icon {
         width: 21rem;
         height: 13rem;
+        margin-top: -1rem;
     }
 
     html {
@@ -856,7 +857,7 @@ body {
     .search img {
         width: 1.4rem;
         height: 1.4rem;
-        margin-bottom: -0.3rem;
+        margin-top: -1.3rem;
         margin-right: -3rem;
     }
 
@@ -902,11 +903,11 @@ body {
     }
 
     .weather h1 {
-        font-size: 5rem;
+        font-size: 3rem;
     }
 
     .weather h2 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .details {
@@ -932,6 +933,7 @@ body {
     #foot h2 {
         font-size: 130%;
         word-spacing: 0.4rem;
+        letter-spacing: 0.4rem;
     }
 }
 
