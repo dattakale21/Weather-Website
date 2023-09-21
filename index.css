@@ -763,7 +763,7 @@ body {
     }
 
     .search {
-        margin-left: -1.01rem;
+        margin-left: -1.3rem;
         border-radius: 0.1rem;
         width: 100%;
         margin-top: -1rem;
@@ -779,16 +779,16 @@ body {
 
     .col .hum,
     .wind {
-        font-size: 260%;
+        font-size: 210%;
     }
 
     .col #hu,
     .col #win {
-        font-size: 210%;
+        font-size: 160%;
     }
 
     .col #wi {
-        margin-left: 3.8rem;
+        margin-left: 3.5rem;
     }
 
     .col #win {
@@ -800,21 +800,21 @@ body {
     }
 
     .col img {
-        width: 5.4rem;
-        height: 5.3rem;
+        width: 3.8rem;
+        height: 3.7rem;
         margin-left: 1rem;
     }
 
     .weather h1 {
-        font-size: 740%;
+        font-size: 640%;
     }
 
     .weather h2 {
-        font-size: 510%;
+        font-size: 410%;
     }
 
     .details {
-        margin-top: 12rem;
+        margin-top: 5rem;
         padding: 0 1rem;
     }
 
@@ -823,19 +823,20 @@ body {
     }
 
     .newcard {
-        margin-top: 6rem;
-        height: 80vh;
+        margin-top: 13rem;
+        height: 70vh;
     }
 
-    .error h4 ,.emp h4{
-        font-size: 250%;
+    .error h4,
+    .emp h4 {
+        font-size: 210%;
     }
 
-    .title{
-        top:1.5rem;
+    .title {
+        top: 1.5rem;
     }
 
-    #foot h2{
+    #foot h2 {
         font-size: 100%;
     }
 
@@ -926,7 +927,7 @@ body {
         bottom: 0;
     }
 
-    #foot h2{
+    #foot h2 {
         font-size: 130%;
         word-spacing: 0.4rem;
     }
