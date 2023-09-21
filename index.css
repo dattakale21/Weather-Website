@@ -823,7 +823,7 @@ body {
     }
 
     .newcard {
-        margin-top: 13rem;
+        margin-top: 6rem;
         height: 70vh;
     }
 
@@ -849,7 +849,7 @@ body {
     }
 
     html {
-        font-size: 60%;
+        font-size: 40%;
     }
 
     .search img {
@@ -918,12 +918,13 @@ body {
     }
 
     .newcard {
-        margin-top: 7rem;
+        margin-top: 9rem;
         height: 66vh;
         padding-bottom: 4rem;
     }
 
     #foot {
+        position: absolute;
         bottom: 0;
     }
 
