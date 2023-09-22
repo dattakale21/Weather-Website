@@ -749,8 +749,8 @@ body {
     }
 
     .search img {
-        width: 1.4rem;
-        height: 1.4rem;
+        width: 1.1rem;
+        height: 1.1rem;
         margin-top: -1.3rem;
         margin-right: -3rem;
     }
@@ -841,15 +841,14 @@ body {
 @media (max-height:580px) {
     .search {
         width: 100%;
-        margin-left: -1rem;
+        margin-left: -0.7rem;
         border-radius: 0.1rem;
     }
 
     .search img {
-        width: 3.4rem;
-        height: 3.4rem;
-        margin-bottom: -1.1rem;
-        margin-right: -6rem;
+        width: 1.8rem;
+        height: 1.8rem;
+        margin-right: -1rem;
     }
 }
 
