@@ -816,6 +816,7 @@ body {
         margin-top: 9rem;
         height: 50vh;
         padding-bottom: 4rem;
+        width: 70vw;
     }
 
     #foot {
@@ -947,6 +948,16 @@ body {
 
     #foot h2 {
         font-size: 80%;
+    }
+}
+
+
+@media (max-width:414px) and (max-height:614px) {
+    .search img{
+        margin-top: -0.5rem;
+       height: 2.4rem;
+       width: 2.4rem;
+       margin-right: -7rem;
     }
 }
 
